@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8dp"
+        android:visibility="gone"
+        android:lines="1"
+        android:ellipsize="end"
+        tools:visibility="visible"
+        tools:text="这是标题" />
+
+    <TextView
+        android:id="@+id/message"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8dp"
+        tools:text="拇指医生真牛逼拇指医生真牛拇指医生真牛拇指医生真牛拇指医生真牛" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            tools:visibility="visible"
+            android:lines="1"
+            android:text="确定"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            tools:visibility="visible"
+            android:lines="1"
+            android:text="暂不" />
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/button3"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:lines="1"
+            android:text="知道了"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>
