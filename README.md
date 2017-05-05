@@ -14,4 +14,13 @@ Android中的构建者（Builder）模式<http://www.jianshu.com/p/0adc46f457be>
 产生多余的Builder对象、Director对象，消耗内存
 ### 关于线程安全
 
-Builder模式是非线程安全的，如果要在Builder内部类中检查一个参数的合法性，必需要在对象创建完成之后再检查，
+Builder模式是非线程安全的，如果要在Builder内部类中检查一个参数的合法性，必需要在对象创建完成之后再检查.
+
+       public Person build() {
+                // Builder模式是非线程安全的，如果要在Builder内部类中检查一个参数的合法性，必需要在对象创建完成之后再检查，
+                Person p = new Person(this);
+                if (p.age > 200) {
+                    throw new IllegalStateException("age error" + p.age);
+                }
+                return new Person(this);
+            }
